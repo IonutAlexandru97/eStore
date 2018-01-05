@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a26c7fe-6d27-4667-a6cd-878ecd275213" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/estore_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/estore_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/war_exploded.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-    </list>
+    <list default="true" id="9a26c7fe-6d27-4667-a6cd-878ecd275213" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1186,12 +1181,12 @@
       <workItem from="1514473701143" duration="9055000" />
       <workItem from="1514486676082" duration="4143000" />
       <workItem from="1514582111821" duration="59000" />
-      <workItem from="1515144250519" duration="1062000" />
+      <workItem from="1515144250519" duration="1221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146468000" />
+    <option name="totallyTimeSpent" value="146627000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
