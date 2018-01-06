@@ -6,6 +6,7 @@ import com.estore.model.Customer;
 import com.estore.model.ShippingAddress;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -25,7 +26,7 @@ public class RegisterController {
         return "registerCustomer";
     }
 
-    /*@RequestMapping("/register")
+    @RequestMapping("/register")
     public String registerCustomerPost(@ModelAttribute("customer") Customer customer, Model model){
 
         customer.setEnabled(true);
