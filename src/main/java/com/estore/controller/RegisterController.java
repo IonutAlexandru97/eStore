@@ -8,9 +8,11 @@ import com.estore.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.context.request.WebRequest;
 
 @Controller
 public class RegisterController {
@@ -18,8 +20,8 @@ public class RegisterController {
     @Autowired
     CustomerService customerService;
 
-    @RequestMapping("/register")
-    public String registerCustomer(Model model){
+    @RequestMapping(value = "/register", method = RequestMethod.GET)
+    public String registerCustomer( Model model){
 
         Customer customer = new Customer();
         BillingAddress billingAddress = new BillingAddress();
@@ -33,10 +35,11 @@ public class RegisterController {
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public String registerCustomerPost(@ModelAttribute("customer") Customer customer, Model model){
+    public String registerCustomerPost(@ModelAttribute("customer") Customer customer,BindingResult bindingResult, Model model){
 
         customer.setEnabled(true);
         customerService.addCustomer(customer);
+        model.addAttribute("customer", customer);
 
         return "registerCustomerSucces";
     }
