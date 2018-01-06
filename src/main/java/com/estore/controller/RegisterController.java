@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class RegisterController {
 
     @Autowired
-    private CustomerService customerService;
+    CustomerService customerService;
 
     @RequestMapping("/register")
     public String registerCustomer(Model model){
