@@ -26,7 +26,7 @@ public class RegisterController {
         return "registerCustomer";
     }
 
-    @RequestMapping("/register")
+    /*@RequestMapping("/register")
     public String registerCustomerPost(@ModelAttribute("customer") Customer customer, Model model){
 
         customer.setEnabled(true);
