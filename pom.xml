@@ -5,7 +5,7 @@
     <groupId>com.mywebsite</groupId>
     <artifactId>estore</artifactId>
 	<packaging>war</packaging>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
 	<name>estore</name>
 	
 	<properties>
@@ -17,7 +17,7 @@
 	<scm>
 		<url>scm:git:https://github.com/IonutAlexandru97/eStore.git</url>
 		<developerConnection>scm:git:https://github.com/IonutAlexandru97/eStore.git</developerConnection>
-  <tag>1.0</tag>
+  <tag>HEAD</tag>
   </scm>
 
 <distributionManagement>
