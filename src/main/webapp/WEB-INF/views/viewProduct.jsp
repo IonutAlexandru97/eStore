@@ -50,7 +50,7 @@
                         <a href="<c:url value="/product/productList"/>" class="btn btn-default">Back</a>
                         <a href="#" class="btn btn-warning btn-large" ng-click="addToCart('${product.productId}')"><i
                                 class="fa fa-shopping-cart"></i>Order Now</a>
-                        <a href="<spring:url value="/cart"/>" class="btn btn-default"><i class="fa fa-hand-o-right"></i>View Cart</a>
+                        <a href="<spring:url value="/customer/cart"/>" class="btn btn-default"><i class="fa fa-hand-o-right"></i>View Cart</a>
                     </p>
                 </div>
             </div>

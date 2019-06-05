@@ -1,8 +1,11 @@
 package com.estore.model;
 
+import org.springframework.stereotype.Component;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+
 
 @Entity
 public class Users {
@@ -11,10 +14,9 @@ public class Users {
     @GeneratedValue
     private int usersId;
     private String username;
-    private  String password;
-    private boolean enabled;
+    private String password;
+    private Boolean enabled;
     private int customerId;
-
 
     public int getUsersId() {
         return usersId;
@@ -40,11 +42,11 @@ public class Users {
         this.password = password;
     }
 
-    public boolean isEnabled() {
+    public Boolean getEnabled() {
         return enabled;
     }
 
-    public void setEnabled(boolean enabled) {
+    public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
 

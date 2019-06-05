@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>My Music Store</title>
+    <title>Artwork4You</title>
 
     <!-- Angular.JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
@@ -67,7 +67,7 @@
                             </c:if>
 
                             <c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
-                                <li><a href="<c:url value="/admin/" />">Admin</a></li>
+                                <li><a href="<c:url value="/admin" />">Admin</a></li>
                             </c:if>
 
                         </c:if>
